@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS cvdd;
+CREATE TABLE IF NOT EXISTS cvdd.aluno(
+
+
+
+);
+CREATE TABLE IF NOT EXISTS cvdd.curso(
+
+
+);
