@@ -1,8 +1,7 @@
 <?php 
-include 'Aluno_Model.php';
 include 'Connection/Conexao.php';
 
-class Model extends Aluno_Model
+class Model
 {
 		// Método que mostra a view principal
 	public function showPrincipal()
