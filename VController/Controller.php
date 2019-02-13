@@ -1,12 +1,22 @@
 <?php 
-	include 'VModel/Model.php';
-	include 'views/View.php';
+include 'VModel/Model.php';
+include 'views/View.php';
 
-	class Controller 
+class Controller 
+{
+
+	public function index()
 	{
-		public function index()
-		{
-			$message = (new Model())->showPrincipal();
-			return (new View())->showView();
-		}
+		 $message = (new Model())->showPrincipal();
+		 (new View($message))->showView();
+		 $this->receiveInsert();
 	}
+
+	public function receiveInsert()
+	{
+		 $student_name = $_POST["stname"];
+		 $course_name = $_POST["csrname"];
+		 $msg = new Model;
+		 $msg->insert();
+	}
+}

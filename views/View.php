@@ -1,11 +1,11 @@
 <?php 
 
-	class View
-	{
-		private $view;
+class View
+{
+	private $view;
 
-		public function showView()
-		{
-			echo $this->view;
-		}
+	public function showView()
+	{
+		echo $this->view;
 	}
+}

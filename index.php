@@ -1,6 +1,9 @@
 <?php 
 	include 'VController/Controller.php';
 
-	$controller = (new Controller())->index();
+	$controller = new Controller;
+	$controller->index();
+
+
 
  ?>

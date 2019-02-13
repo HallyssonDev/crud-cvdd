@@ -1,10 +1,17 @@
 CREATE SCHEMA IF NOT EXISTS cvdd;
 CREATE TABLE IF NOT EXISTS cvdd.aluno(
 
-
-
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NOT NULL,
+	curso VARCHAR(255) NOT NULL,
+	PRIMARY KEY(id)
 );
 CREATE TABLE IF NOT EXISTS cvdd.curso(
-
-
+	id_course INT NOT NULL,
+	name_course VARCHAR(255) NOT NULL,
+	status_course VARCHAR(3) NOT NULL,
+	PRIMARY KEY(id_course),
+	FOREIGN KEY(id_course) REFERENCES cvdd.aluno(id)
 );
+
+
