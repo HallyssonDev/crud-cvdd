@@ -10,6 +10,7 @@ class Controller
 		 $message = (new Model())->showPrincipal();
 		 (new View($message))->showView();
 		 $this->receiveInsert();
+		 $this->showSelect();
 	}
 
 	public function receiveInsert()
@@ -19,4 +20,9 @@ class Controller
 		 $msg = new Model;
 		 $msg->insert();
 	}
+	public function showSelect()
+	{
+		(new Model())->read();
+	}
+
 }

@@ -1,5 +1,3 @@
-$('.menu .item').tab();
-
 $("#add").click(function () {
 	$('.modal1').modal('show');
 });
